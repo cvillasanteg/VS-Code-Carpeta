@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 20;
+    padding: 0;
+    background: black;
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 80px;
+    margin: 0px;
+}
+
+h2{
+    font-size: 60px;
+    margin: 0px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(120vh - 100px);
+    top:30px;
+    z-index: 2;
+}
+
+section.sticky{
+    position: sticky;
+    margin-top: 100px;
+}
+
+section .full-screen{
+    height: 100vh;
+    top: 0;
+    margin-top: 0;
+    z-index: 3;
+}
+
+
+nav{
+    position:fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background: rgba(3, 3, 3, 0.312);    
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: 45px;
+}
+
+nav ul li a {
+    color: white;
+    font-family: monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section.about .empty {
+    height: 92vh;
+    flex-basis: 37.5vw;
+    background: rgb(223, 221, 221);
+    border-radius:100px;
+    flex-direction: column;
+    padding: 2.5vw;
+}
+
+section.about article {
+    height: 80vh;
+    flex: 1;
+    flex-direction: column;
+    padding: 0vw;
+}
+
+section.about article .title {
+    height: 30vh;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    background: rgba(56, 159, 172, 0.257);
+    border-radius:100px;
+    padding: 5vw;
+    justify-content: center;
+}
+
+section.about article .description{
+    height: 62vh;
+    flex: 1;
+    align-items:center;
+    background: rgb(1, 136, 136);
+    border-radius: 100px;
+    padding: 1.90vw;
+    color: #000000;
+    text-align: center;
+    text-align: justify;
+    text-align: left; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+section.about .description a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70%;
+    align-items: center;
+    color: black;
+    background-color: rgb(1, 67, 99);
+    border-radius: 8px;
+    padding: 10px 20px; 
+    margin: 10px auto;
+}
+
+/*SERVICIOS*/
+
+section.servicio article {
+    margin-left: 103%;
+    flex-basis: 37.5vw;
+    background: rgb(121, 120, 120);
+    border-radius:100px;
+    flex-direction: column;
+    padding: 5.3vw;
+}
+
+section.servicio article .titlehtml{
+    height: 10vh;
+    flex: 2;
+    display: flex;
+    margin-left: 33%;
+    align-items: center;
+    padding: 0;
+    line-height: 1.6;
+}
+
+section.servicio article .titlecss{
+    height: 10vh;
+    flex: 2;
+    display: flex;
+    margin-left: 40%;
+    align-items: center;
+    padding: 0;
+    line-height: 1.6;
+}
+
+section.servicio article .titlejs{
+    height: 10vh;
+    flex: 2;
+    display: flex;
+    margin-left: 40%;
+    align-items: center;
+    padding: 0;
+    line-height: 1.6;
+}
+
+section.servicio{
+    width: 47%;
+    height: 40vw;
+    line-height: 1vw;
+    display: flex;
+    flex-basis: 50vw;
+    margin-top:auto;
+    margin-right: 10px;
+    background: rgb(94, 137, 176);
+    border-radius: 100px;
+}
+
+section.servicio .text {
+    height: 70vh;
+    flex: 1;
+    align-items:center;
+    border-radius: 100px;
+    padding: 12.5vw;
+    color: #000000;
+    font-size: 25px;
+}
+
+section.servicio .text a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70%;
+    align-items: center;
+    color: black;
+    background-color: rgb(1, 67, 99);
+    border-radius: 8px;
+    padding: 10px 20px; 
+    margin: 10px auto;
+}
+
+/*SERVICIOS POR SEPARADO*/
+
+
+section.servicio.servicio-html .text h2,
+section.servicio.servicio-html .text  {
+    font-family: 'Times New Roman', Times, serif;
+    width: 40vw;
+    padding: 20px;
+    margin: 0;
+    color: rgb(4, 100, 105);
+    line-height: 1;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+section.servicio.servicio-css .text h2,
+section.servicio.servicio-css .text  {
+    font-family: 'Times New Roman', Times, serif;
+    width: 40vw;
+    padding: 20px;
+    margin: 0;
+    color: rgb(6, 98, 124);
+    line-height: 1;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+section.servicio.servicio-js .text h2,
+section.servicio.servicio-js .text  {
+    font-family: 'Times New Roman', Times, serif;
+    width: 40vw;
+    padding: 20px;
+    margin: 0;
+    color: rgb(11, 101, 142);
+    line-height: 1;
+    font-size: 30px;
+    text-align: center;
+}
+
+section.contacto{
+    width: 100%;
+    height: 50.3vw;
+    line-height: 1vw;
+    display: flex;
+    flex-basis: 50vw;
+    margin-top:auto;
+    margin-right: 10px;
+    background: linear-gradient(rgb(1, 49, 1), rgb(1, 49, 1) 60%, rgb(1, 51, 21) 70%, gray);
+    border-radius: 100px;
+}
+
+section.contacto .titlecontacto{
+    font-family: 'Times New Roman', Times, serif;
+    height: 25vh;
+    flex: 2;
+    display: flex;
+    margin-left: 34%;
+    align-items: center;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 80px;
+}
+section.contacto .mail{
+    display: flex;
+    font-size: 40px;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    right: 34%;
+    margin: 0 auto;
+}
+
+section.contacto .numero{
+    display: flex;
+    font-size: 40px;
+    align-items: end;
+    border-radius: 10px;
+    position: relative;
+    right: 76%;
+    height: 65%;
+    margin: 10px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 10px;
+    min-width: 100%;
+}
+
+
